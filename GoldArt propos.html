@@ -1,0 +1,197 @@
+<!DOCTYPE html><html><head><base href="https://www.goldart.com/a-propos">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldart Photography - À propos</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #ffd700;
+    padding: 1rem;
+    text-align: center;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  nav {
+    background-color: #333;
+    padding: 0.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    color: #ffd700;
+  }
+  .about-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+  }
+  .about-section {
+    margin-bottom: 2rem;
+  }
+  .about-section h2 {
+    color: #ffd700;
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .about-section p {
+    line-height: 1.6;
+  }
+  .team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+  }
+  .team-member-info h3 {
+    margin: 0;
+    color: #1a1a1a;
+  }
+  .team-member-info p {
+    margin: 0.5rem 0 0;
+    font-style: italic;
+  }
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Goldart Photography</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="https://www.goldart.com/">Accueil</a></li>
+      <li><a href="https://www.goldart.com/galerie">Galerie</a></li>
+      <li><a href="https://www.goldart.com/services">Services</a></li>
+      <li><a href="https://www.goldart.com/a-propos" class="active">À propos</a></li>
+      <li><a href="https://www.goldart.com/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="about-container">
+    <h1>À propos de Goldart Photography</h1>
+    
+    <section class="about-section fade-in">
+      <h2>Notre Histoire</h2>
+      <p>Fondée en 2023 à Port-au-Prince, Goldart Photography est née de la passion de Jonathan Louis pour la capture de moments précieux et la création d'images saisissantes. Depuis lors, nous nous efforçons d'immortaliser la beauté d'Haïti et de ses habitants à travers notre objectif.</p>
+    </section>
+    
+    <section class="about-section fade-in">
+      <h2>Notre Mission</h2>
+      <p>Chez Goldart Photography, notre mission est de révéler la beauté cachée dans chaque instant, de raconter des histoires visuelles puissantes et de créer des souvenirs durables pour nos clients. Nous croyons au pouvoir de la photographie pour inspirer, émouvoir et connecter les gens.</p>
+    </section>
+    
+    <section class="about-section fade-in">
+      <h2>Jonathan Louis (CEO)</h2>
+      <div class="team-member">
+        <img src="https://www.goldart.com/images/fuji-camera.jpg" alt="Image d'une caméra Fuji dernier cri, avec un design élégant et moderne, des contrôles sophistiqués et un objectif de haute qualité" width="100" height="100">
+        <div class="team-member-info">
+  <h3></h3>
+  <p>Fondateur et Photographe Principal</p>
+</div>
+      </div>
+      <div class="team-member">
+        <img src="https://www.goldart.com/images/haitian-beach-wedding.jpg" alt="Photographie d'un mariage d'un couple noir au bord de la plage, le couple s'embrasse tendrement avec l'océan turquoise en arrière-plan et le soleil couchant créant une atmosphère romantique" width="100" height="100">
+        <div class="team-member-info">
+          <h3></h3>
+          <p>Photographe de Mariage</p>
+        </div>
+      </div>
+      <div class="team-member">
+        <img src="https://www.goldart.com/images/saut-mathurine.jpg" alt="Photographie du Saut Mathurine en Haïti, une impressionnante cascade naturelle avec de l'eau cristalline tombant sur des rochers escarpés, entourée d'une végétation luxuriante et tropicale" width="100" height="100">
+        <div class="team-member-info">
+          <h3></h3>
+          <p>Photographe de Paysage</p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="about-section fade-in">
+      <h2>Notre Engagement</h2>
+      <p>Nous nous engageons à fournir des services photographiques de la plus haute qualité, en utilisant des équipements de pointe et des techniques innovantes. Notre équipe suit régulièrement des formations pour rester à la pointe des dernières tendances en photographie.</p>
+    </section>
+    
+    <section class="about-section fade-in">
+      <h2>Notre Communauté</h2>
+      <p>Goldart Photography est fière de faire partie intégrante de la communauté artistique haïtienne. Nous participerons régulièrement à des expositions locales, des ateliers pour les jeunes photographes en herbe et des projets caritatifs visant à promouvoir l'art et la culture en Haïti.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Goldart Photography. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function fadeInElement(element) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      observer.observe(element);
+    }
+
+    const sections = document.querySelectorAll('.fade-in');
+    sections.forEach(section => {
+      fadeInElement(section);
+    });
+  </script>
+</body></html>

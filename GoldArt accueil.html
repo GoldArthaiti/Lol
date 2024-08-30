@@ -1,0 +1,250 @@
+<!DOCTYPE html><html><head><base href="https://www.goldart.com/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldart Photography - Accueil</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #ffd700;
+    padding: 1rem;
+    text-align: center;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  nav {
+    background-color: #333;
+    padding: 0.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover {
+    color: #ffd700;
+  }
+  .hero {
+    background-image: url('https://www.goldart.com/images/hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  .cta-button {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .cta-button:hover {
+    background-color: #ffed4a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem 2rem;
+    background-color: #fff;
+  }
+  .feature {
+    text-align: center;
+    max-width: 300px;
+  }
+  .feature i {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 1rem;
+  }
+  .feature h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .feature p {
+    font-size: 1rem;
+    color: #666;
+  }
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  /* Animation pour le contenu hero */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .hero-content {
+    animation: fadeInUp 1.5s ease-out;
+  }
+  
+  /* Animation pour l'arrière-plan */
+  @keyframes zoomBackground {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .hero {
+    animation: zoomBackground 20s ease-out forwards;
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Goldart Photography</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="/" class="active">Accueil</a></li>
+      <li><a href="/galerie">Galerie</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/a-propos">À propos</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>L'Art de Capturer la Vie</h1>
+        <p>Chez Goldart Photography, nous transformons vos instants précieux en œuvres d'art éternelles</p>
+        <a href="/contact" class="cta-button">Découvrez Notre Vision</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <i class="fas fa-camera"></i>
+        <h2>Expertise Professionnelle</h2>
+        <p>Notre équipe de photographes expérimentés capture l'essence de chaque moment avec précision et créativité.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-paint-brush"></i>
+        <h2>Retouche Artistique</h2>
+        <p>Nous sublimmons vos photos avec des techniques de retouche avancées tout en préservant leur authenticité.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-heart"></i>
+        <h2>Passion et Dévouement</h2>
+        <p>Chaque projet est abordé avec passion, assurant des résultats qui dépassent vos attentes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Goldart Photography. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    // Animation smooth scroll pour la navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Animation pour les features
+    const features = document.querySelectorAll('.feature');
+    const featuresObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, { threshold: 0.5 });
+
+    features.forEach((feature, index) => {
+      feature.style.opacity = '0';
+      feature.style.transform = 'translateY(20px)';
+      feature.style.transition = `opacity 0.5s ease-out ${index * 0.2}s, transform 0.5s ease-out ${index * 0.2}s`;
+      featuresObserver.observe(feature);
+    });
+
+    // Effet de parallaxe pour l'arrière-plan hero
+    const hero = document.querySelector('.hero');
+    window.addEventListener('scroll', () => {
+      const scrollPosition = window.pageYOffset;
+      hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+    });
+  </script>
+</body></html>

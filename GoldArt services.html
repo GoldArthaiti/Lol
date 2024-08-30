@@ -1,0 +1,238 @@
+<!DOCTYPE html><html><head><base href="https://www.goldart.com/services">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Goldart Photography - Nos Services</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  header {
+    background-color: #1a1a1a;
+    color: #ffd700;
+    padding: 1rem;
+    text-align: center;
+  }
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  nav {
+    background-color: #333;
+    padding: 0.5rem;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 1rem;
+  }
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  nav ul li a:hover, nav ul li a.active {
+    color: #ffd700;
+  }
+  .services-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-bottom: 2rem;
+  }
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .service-card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .service-image {
+    height: 200px;
+    overflow: hidden;
+  }
+  .service-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .service-card:hover .service-image img {
+    transform: scale(1.1);
+  }
+  .service-content {
+    padding: 1.5rem;
+  }
+  .service-content h2 {
+    color: #1a1a1a;
+    margin-top: 0;
+  }
+  .service-content p {
+    margin-bottom: 1rem;
+  }
+  .btn {
+    display: inline-block;
+    background-color: #ffd700;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #e6c200;
+  }
+  footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  .fade-in.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">Goldart Photography</div>
+  </header>
+  
+  <nav>
+    <ul>
+      <li><a href="https://www.goldart.com/">Accueil</a></li>
+      <li><a href="https://www.goldart.com/galerie">Galerie</a></li>
+      <li><a href="https://www.goldart.com/services" class="active">Services</a></li>
+      <li><a href="https://www.goldart.com/a-propos">À propos</a></li>
+      <li><a href="https://www.goldart.com/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="services-container">
+    <h1>Nos Services</h1>
+    
+    <div class="service-grid">
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/wedding-photography.jpg" alt="Un couple se tenant la main sur une plage au coucher du soleil, la mer en arrière-plan" width="300" height="200">
+        </div>
+        <div class="service-content">
+  <h2>Photographie de mariage et d'événements</h2>
+  <p>Capturez les moments magiques de votre jour spécial ou de vos événements importants avec notre service de photographie professionnelle. Nous créons des souvenirs intemporels qui dureront toute une vie.</p>
+  <a href="https://www.goldart.com/services/mariage-et-evenements" class="btn">En savoir plus</a>
+</div>
+      </div>
+      
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/portrait-photography.jpg" alt="Portrait d'une jeune femme haïtienne souriante, avec des bijoux traditionnels" width="300" height="200">
+        </div>
+        <div class="service-content">
+          <h2>Portraits</h2>
+          <p>Révélez votre véritable personnalité à travers nos séances de portraits artistiques. Idéal pour les professionnels, les familles ou simplement pour vous faire plaisir.</p>
+          <a href="https://www.goldart.com/services/portraits" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/event-photography.jpg" alt="Une foule joyeuse lors d'un festival haïtien coloré, avec des danseurs en costume traditionnel" width="300" height="200">
+        </div>
+        <div class="service-content">
+          <h2>Photographie d'Événements</h2>
+          <p>Des festivals aux conférences d'entreprise, nous capturons l'essence de votre événement avec un œil professionnel et créatif.</p>
+          <a href="https://www.goldart.com/services/evenements" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/landscape-photography.jpg" alt="Vue panoramique des montagnes d'Haïti au lever du soleil, avec des nuages bas dans la vallée" width="300" height="200">
+        </div>
+        <div class="service-content">
+          <h2>Photographie de Paysage</h2>
+          <p>Découvrez la beauté naturelle d'Haïti à travers nos clichés de paysages à couper le souffle. Parfait pour la décoration ou les campagnes touristiques.</p>
+          <a href="https://www.goldart.com/services/paysages" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/product-photography.jpg" alt="Mise en scène élégante de bijoux haïtiens artisanaux sur un fond texturé" width="300" height="200">
+        </div>
+        <div class="service-content">
+          <h2>Photographie de Produits</h2>
+          <p>Mettez en valeur vos produits avec des photos professionnelles qui attirent l'attention. Idéal pour les boutiques en ligne et les catalogues.</p>
+          <a href="https://www.goldart.com/services/produits" class="btn">En savoir plus</a>
+        </div>
+      </div>
+      
+      <div class="service-card fade-in">
+        <div class="service-image">
+          <img src="https://www.goldart.com/images/workshop.jpg" alt="Un groupe de personnes participant à un atelier de photographie, manipulant des appareils photo" width="300" height="200">
+        </div>
+        <div class="service-content">
+          <h2>Ateliers et Formations</h2>
+          <p>Apprenez les secrets de la photographie professionnelle avec nos ateliers et cours adaptés à tous les niveaux, du débutant à l'expert.</p>
+          <a href="https://www.goldart.com/services/ateliers" class="btn">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2024 Goldart Photography. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    function fadeInElement(element) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+      observer.observe(element);
+    }
+
+    const cards = document.querySelectorAll('.fade-in');
+    cards.forEach(card => {
+      fadeInElement(card);
+    });
+  </script>
+</body></html>
